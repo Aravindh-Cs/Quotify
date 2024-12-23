@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Quote<span>Forge.</span></a></div>
+        <div class="menu">
+            <div class="links">
+                <a href="#home">home</a>
+                <a href="display.php?type=mahabarat">mahabharat</a>
+                <a href="display.php?type=bible">bible</a>
+                <a href="display.php?type=quran">quran</a>
+                <a href="display.php?type=mottoes">mottoes</a>
+                <a href="adminform.html">admin login</a>
+            </div>
+             <div class="lines" onclick="toggle()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </header>
+    <div class="home" id="home">
+        <img src="img/bg1.jpg" alt="">
+        <p>
+            Welcome to QuoteForge, where inspiration meets innovation! Unleash the power of words with 
+            our dynamic and user-friendly quote generator. Our platform is designed to spark creativity, 
+            motivation, and positivity by delivering personalized and thought-provoking quotes just for you.
+         </p>
+    </div>
+    <script>
+        const bar = document.querySelector('.lines');
+        const list = document.querySelector('.links');
+    function toggle()
+    {
+       if(list.className==="links"){
+        list.className="active";
+       }else{
+        list.className="links";
+       }
+    }
+    </script>
+</body>
+</html>
